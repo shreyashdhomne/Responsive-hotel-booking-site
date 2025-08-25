@@ -10,6 +10,13 @@
 
 }
 
+
+/* html,
+body {
+    overflow-x: hidden;
+} */
+
+
 .hero {
     position: relative;
     overflow: hidden;
@@ -93,6 +100,7 @@ a {
     animation-name: anim1;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+    width: 100%;
     height: 100%;
     text-align: justify;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -104,14 +112,16 @@ a {
 }
 
 .space {
+
     height: 100px;
     background-color: beige;
     display: none;
 }
 
 .content {
-    width: 100%;
+
     /* height: 400px; */
+
     padding: 70px 20px 20px 20px;
     background-color: beige;
     animation-name: anim;
@@ -129,7 +139,7 @@ a {
 @keyframes anim1 {
     from {
         opacity: 0;
-        transform: translateX(-90px);
+        transform: translateX(-70px);
     }
 
     to {
@@ -139,6 +149,45 @@ a {
 
 }
 
+/* ROOM SECTION */
+.intro {
+    padding: 80px 20px 20px 20px;
+    background-color: thistle;
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+}
+
+.room-card {
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: -1;
+    padding: 20px;
+
+}
+
+.bg {
+    z-index: -1;
+    position: relative;
+    background-color: rgb(193, 163, 193);
+
+}
+
+.card {
+    width: 300px;
+    z-index: -1;
+    margin: 10px;
+
+}
+
+.card-img-top {
+    height: 250px;
+
+}
 
 
 @media(min-width:368px) {
@@ -166,6 +215,8 @@ a {
         justify-content: space-around;
     }
 
+
+
     .nav-items {
         font-size: large;
     }
@@ -181,6 +232,11 @@ a {
 
     .lobby-2 {
         order: 1;
+    }
+
+    /* ROOM SECTION  */
+    .card {
+        width: 400px;
     }
 
 }
