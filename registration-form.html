@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orrencia-Royale</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="d1">
+        <a style="display: block; background-color:  rgb(67, 65, 65);" href="form.html"> <button
+                class="btn btn-secondary p-2 m-2">Back</button></a>
+        <div class="available">
+            <h1>Your Room is available.</h1><br>
+            <h3>Please Register for Bookings.</h3>
+        </div>
+        <div class="form-bg">
+            <form action="thankyou.html" class="form-css needs-validation" novalidate>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom01">First name</label>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Mark" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom02">Last name</label>
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="Otto" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom03">Email</label>
+                        <input type="email" class="form-control" id="validationCustom03" placeholder="name@mail.com"
+                            required>
+                        <div class="invalid-feedback">
+                            Please provide a valid email.
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationCustom03">Password</label>
+                        <input type="password" class="form-control" id="validationCustom03" placeholder="password"
+                            required>
+                        <div class="invalid-feedback">
+                            Please provide a valid email.
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="validationCustom05">Date of Birth</label>
+                        <input type="date" class="form-control" id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid DOB.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </form>
+        </div>
+        <div class="about-footer container-fluid w-100">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <p class="small">
+                        <i class="fa-solid fa-location-dot p-2"></i>
+                        Barcelona, Spain
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-6 p-2">
+                    <p class="small">
+                        <i class="fa-solid fa-phone-volume"></i> +91 98*** **210 <br>
+                        <i class="fa-solid fa-envelope"></i>info@orrencia-royale.com
+                    </p>
+                </div>
+                <div class="small text-center col-12 col-lg-6 container-fluid">
+                    <p style="font-family:'Times New Roman', Times, serif;">
+                        © Designed & Developed by <b>Shreyash Dhomne</b><br>
+                        Terms & Conditions | All Rights Reserved</p>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict';
+                window.addEventListener('load', function () {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
+        </script>
+    </div>
+
+</body>
+
+</html>
