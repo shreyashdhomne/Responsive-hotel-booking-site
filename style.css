@@ -11,17 +11,19 @@
 }
 
 
-/* html,
+html,
 body {
     overflow-x: hidden;
-} */
+}
 
+/* --------------------------------------------HOME PAGE----------------------------------------------------- */
 
 .hero {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+
 }
 
 nav {
@@ -87,7 +89,7 @@ a {
 
 
 
-/* ABOUT SECTION */
+/*------------------------------------------------ ABOUT SECTION ----------------------------------------------*/
 
 
 .sub-heading {
@@ -158,7 +160,7 @@ a {
 
 }
 
-/* ROOM SECTION */
+/* ------------------------------------------ROOM SECTION---------------------------------------- */
 .intro {
     padding: 80px 20px 20px 20px;
     background-color: thistle;
@@ -168,7 +170,7 @@ a {
 
 }
 
-.room-card {
+.group-card {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -203,27 +205,43 @@ a {
     transform: scale(1.05, 1.05);
 }
 
-/* FORM SECTION  */
+/*------------------------------------------ FORM SECTION ------------------------------------------------ */
 
 .form-css {
     overflow: hidden;
-    padding: 20px;
+    padding: 50px;
 }
 
 
 .available {
-    /* height: 25%; */
-    padding: 40px 20px 20px 20px;
-    background-color: rgb(67, 65, 65);
-    color: bisque;
+
+    padding: 40px;
     text-align: center;
 }
 
-.form-bg {
-    /* height: 58.95%; */
-    color: white;
-    background-color: rgb(67, 65, 65);
+
+/* -------------------------------------------DINING SECTION----------------------------------------------  */
+
+.dining-bg {
+
+    width: 100%;
+    background-color: #f0e8df;
+    color: #333333;
+    padding: 80px 20px 20px 20px;
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-timing-function: ease;
 }
+
+.dining-content {
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #FFF8F0;
+
+}
+
+
 
 
 @media(min-width:368px) {
@@ -235,6 +253,13 @@ a {
         order: 0;
     }
 
+}
+
+/* -----------THANK YOU SECTION-----------  */
+.thankyou {
+    text-align: center;
+    padding-top: 20%;
+    height: 78vh;
 }
 
 @media(min-width:1024px) {
@@ -270,7 +295,7 @@ a {
         order: 1;
     }
 
-    /* ROOM SECTION  */
+    /*----------- ROOM SECTION ---------- */
     .card {
         width: 400px;
     }
