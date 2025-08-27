@@ -11,6 +11,8 @@
 }
 
 
+
+
 html,
 body {
     overflow-x: hidden;
@@ -106,11 +108,12 @@ a {
     width: 100%;
     height: 100%;
     text-align: justify;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 
 }
 
@@ -124,9 +127,10 @@ a {
 .content {
 
     /* height: 400px; */
+    text-align: center;
 
     padding: 70px 20px 20px 20px;
-    background-color: beige;
+    background-color: rgb(189, 189, 145);
     animation-name: anim;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -141,6 +145,7 @@ a {
 
 .img {
     transition: 0.5s ease;
+    padding: 20px;
 }
 
 .img:hover {
@@ -241,10 +246,100 @@ a {
 
 }
 
+/* -------------------------------------------EXPLORE SECTION----------------------------------------------  */
+
+.explore-heading {
+    width: 100%;
+    height: 100vh;
+    padding: 80px 20px 20px 20px;
+    /* background-color: darkseagreen; */
+    text-align: center;
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    background-image: url(/images/explore/explore-hero.jpg);
+    object-fit: cover;
+    background-size: cover;
+
+}
+
+.heading-text {
+    animation-name: anim2;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+
+}
+
+.explore-content {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.t-1 {
+    animation-name: anim1;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+
+}
+
+.t-2 {
+    animation-name: anim3;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+
+}
+
+.nearby {
+    background-color: rgb(234, 206, 164);
+    /* height: 100%; */
+    text-align: justify;
+    padding: 30px;
+    animation-name: anim2;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+
+}
 
 
 
-@media(min-width:368px) {
+
+@keyframes anim3 {
+    from {
+        opacity: 0;
+        transform: translateX(70px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes anim2 {
+
+    from {
+        transform: translateY(300px);
+
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+
+
+}
+
+/* -----------THANK YOU SECTION-----------  */
+.thankyou {
+    text-align: center;
+    padding: 20%;
+    height: 100vh;
+}
+
+@media(min-width:376px) {
     .lobby-1 {
         order: 1;
     }
@@ -255,12 +350,6 @@ a {
 
 }
 
-/* -----------THANK YOU SECTION-----------  */
-.thankyou {
-    text-align: center;
-    padding-top: 20%;
-    height: 78vh;
-}
 
 @media(min-width:1024px) {
     nav {
@@ -299,5 +388,6 @@ a {
     .card {
         width: 400px;
     }
+
 
 }
